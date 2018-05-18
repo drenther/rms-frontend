@@ -1,6 +1,7 @@
 {
-	"extends": ["airbnb", "prettier", "prettier/react"],
 	"parser": "babel-eslint",
+	"extends": ["airbnb", "prettier", "prettier/react"],
+	"plugins": ["prettier"],
 	"parserOptions": {
 		"ecmaVersion": 9,
 		"ecmaFeatures": {
@@ -12,7 +13,8 @@
 	},
 	"env": {
 		"browser": true,
-		"node": true
+		"node": true,
+		"jest": true
 	},
 	"rules": {
 		"no-unused-vars": [
@@ -80,7 +82,6 @@
 			{
 				"aspects": ["invalidHref"]
 			}
-		],
-		"plugins": ["prettier"]
+		]
 	}
 }
